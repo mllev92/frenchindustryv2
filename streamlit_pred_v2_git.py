@@ -308,6 +308,7 @@ if page == pages[2] :
     df_paca = df_DEP[df_DEP["REG"] == 93]
     # Création du graphique pour la PACA (Barplot)
     fig = px.bar(df_paca, x='DEP', y='Nombre_entreprises', title='Nombre d\'entreprises en PACA', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig.update_xaxes(tickmode='array', tickvals=df_paca['DEP']
     fig.update_layout(xaxis_title="Départements", yaxis_title="Nombre d'entreprises", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
