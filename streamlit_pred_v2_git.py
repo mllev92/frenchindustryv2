@@ -337,7 +337,7 @@ if page == pages[2] :
 
     # Graphique pour l'Auvergne-Rhône-Alpes (Boxplot)
     df_ara_box = df_full[df_full["REG"]==84]
-    fig = px.box(df_ara_box, x='nom_département', y='SNHM14', title='Salaires moyens en Auvergne-Rhône-Alpes",color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_ara_box, x='nom_département', y='SNHM14', title="Salaires moyens en Auvergne-Rhône-Alpes",color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
