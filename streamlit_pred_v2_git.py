@@ -330,14 +330,14 @@ if page == pages[2] :
     # Graphique de la répartition du nombre d'entreprises et des salaires en ARA
     df_ara = df_DEP[df_DEP["REG"] == 84]
     # Graphique pour l'Auvergne-Rhône-Alpes (Barplot)
-    fig = px.bar(df_ara, x='nom_département', y='Nombre_entreprises', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.bar(df_ara, x='nom_département', y='Nombre_entreprises', title='Nombre d\'entreprises en Auvergne-Rhône-Alpes',text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Nombre d'entreprises", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
 
     # Graphique pour l'Auvergne-Rhône-Alpes (Boxplot)
     df_ara_box = df_full[df_full["REG"]==84]
-    fig = px.box(df_ara_box, x='nom_département', y='SNHM14', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_ara_box, x='nom_département', y='SNHM14', title='Salaires moyens en Auvergne-Rhône-Alpes",color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
