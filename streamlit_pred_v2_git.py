@@ -291,13 +291,13 @@ if page == pages[2] :
     # Graphique de la répartition du nombre d'entreprises et des salaires en IDF
     df_idf = df_DEP[df_DEP["REG"] == 11]
     # Création du graphique pour l'Île-de-France (Barplot)
-    fig = px.bar(df_idf, x='DEP', y='Nombre_entreprises', title='Nombre d\'entreprises en IDF', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.bar(df_idf, x='nom_département', y='Nombre_entreprises', title='Nombre d\'entreprises en IDF', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Nombre d'entreprises", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
 
     # Création du graphique pour l'Île-de-France (Boxplot)
-    fig = px.box(df_idf, x='DEP', y='salaire moyen', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_idf, x='nom_département', y='salaire moyen', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Affichage des graphiques
     st.plotly_chart(fig)
@@ -307,13 +307,13 @@ if page == pages[2] :
     # Graphique de la répartition du nombre d'entreprises et des salaires en PACA
     df_paca = df_DEP[df_DEP["REG"] == 93]
     # Création du graphique pour la PACA (Barplot)
-    fig = px.bar(df_paca, x='DEP', y='Nombre_entreprises', title='Nombre d\'entreprises en PACA', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.bar(df_paca, x='nom_département', y='Nombre_entreprises', title='Nombre d\'entreprises en PACA', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Nombre d'entreprises", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
 
     # Création du graphique pour la PACA (Boxplot)
-    fig = px.box(df_paca, x='DEP', y='salaire moyen', title='Salaires moyens en PACA', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_paca, x='nom_département', y='salaire moyen', title='Salaires moyens en PACA', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Affichage des graphiques
     st.plotly_chart(fig)
@@ -323,13 +323,13 @@ if page == pages[2] :
     # Graphique de la répartition du nombre d'entreprises et des salaires en ARA
     df_ara = df_DEP[df_DEP["REG"] == 84]
     # Graphique pour l'Auvergne-Rhône-Alpes (Barplot)
-    fig = px.bar(df_ara, x='DEP', y='Nombre_entreprises', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.bar(df_ara, x='nom_département', y='Nombre_entreprises', text='Nombre_entreprises', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Nombre d'entreprises", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
 
     # Graphique pour l'Auvergne-Rhône-Alpes (Boxplot)
-    fig = px.box(df_ara, x='DEP', y='salaire moyen', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_ara, x='nom_département', y='salaire moyen', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
