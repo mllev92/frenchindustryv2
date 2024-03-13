@@ -400,7 +400,7 @@ if page == pages[2] :
     st.write("")
 
     st.markdown("""
-                Les corrélations sont assez faibles entre le salaire moyen et les variables explicatives."  \n 
+                Les corrélations sont assez faibles entre le salaire moyen et les variables explicatives.  \n 
                 Les variables les plus corrélées positivement sont : 
                 - la présence de la commune en Ile-de-France (IDF) 
                 - la représentation des foyers vivant en couple avec enfant (ratio_ace) 
