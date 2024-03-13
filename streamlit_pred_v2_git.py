@@ -318,7 +318,8 @@ if page == pages[2] :
     st.plotly_chart(fig)
 
     # Création du graphique pour la PACA (Boxplot)
-    fig = px.box(df_paca, x='nom_département', y='salaire moyen', title='Salaires moyens en PACA', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    df_paca_box = df_full[df_full["REG"]==93]
+    fig = px.box(df_paca_box, x='nom_département', y='salaire moyen', title='Salaires moyens en PACA', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Affichage des graphiques
     st.plotly_chart(fig)
