@@ -245,8 +245,8 @@ if page == pages[2] :
 
     st.write("")
 
-    st.markdown(
-        "Nous constatons que la région Ile-de-France comporte le plus grand nombre d’entreprises. Nous remarquons que la répartition des entreprises en France est très inégale avec une concentration de celles-ci en Ile-de-France. Ensuite, ce sont les régions Auvergne-Rhône-Alpes et Provence-Côte d’Azur qui suivent. La région comptant le moins d’entreprises est la Corse. \n La répartition des salaires est également inégale. En effet, la région Ile-de-France compte les communes disposant des plus hauts salaires avec un salaire médian de 16€/h alors que les autres régions disposent des médianes autour de 12.5€/h. Nous pouvons aussi constater que la région Auvergne-Rhône-Alpes possède des communes avec des salaires moyens très élevés.")
+    st.markdown("
+        Nous constatons que la région Ile-de-France comporte le plus grand nombre d’entreprises. Nous remarquons que la répartition des entreprises en France est très inégale avec une concentration de celles-ci en Ile-de-France. Ensuite, ce sont les régions Auvergne-Rhône-Alpes et Provence-Côte d’Azur qui suivent. La région comptant le moins d’entreprises est la Corse. \n La répartition des salaires est également inégale. En effet, la région Ile-de-France compte les communes disposant des plus hauts salaires avec un salaire médian de 16€/h alors que les autres régions disposent des médianes autour de 12.5€/h. Nous pouvons aussi constater que la région Auvergne-Rhône-Alpes possède des communes avec des salaires moyens très élevés.")
     
     st.write("")
     st.write("")
