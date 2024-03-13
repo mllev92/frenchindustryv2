@@ -302,7 +302,8 @@ if page == pages[2] :
     st.plotly_chart(fig)
 
     # Création du graphique pour l'Île-de-France (Boxplot)
-    fig = px.box(df_idf, x='nom_département', y='salaire moyen', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    df_idf_box = df_full[df_full["REG"]==1]
+    fig = px.box(df_idf, x='nom_département', y='SNHM14', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Affichage des graphiques
     st.plotly_chart(fig)
@@ -335,7 +336,8 @@ if page == pages[2] :
     st.plotly_chart(fig)
 
     # Graphique pour l'Auvergne-Rhône-Alpes (Boxplot)
-    fig = px.box(df_ara, x='nom_département', y='salaire moyen', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    df_ara_box = df_full[df_full["REG"]==84]
+    fig = px.box(df_ara, x='nom_département', y='SNHM14', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
