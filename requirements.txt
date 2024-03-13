@@ -10,3 +10,5 @@ cloudpickle==2.2.1
 pickleshare==0.7.5
 requests==2.31.0
 statsmodels==0.14.0
+plotly_express==0.4.0
+geopandas==0.14.3
