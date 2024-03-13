@@ -302,7 +302,7 @@ if page == pages[2] :
     st.plotly_chart(fig)
 
     # Création du graphique pour l'Île-de-France (Boxplot)
-    df_idf_box = df_full[df_full["REG"]==1]
+    df_idf_box = df_full[df_full["REG"]==11]
     fig = px.box(df_idf_box, x='nom_département', y='SNHM14', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Affichage des graphiques
