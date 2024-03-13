@@ -22,8 +22,6 @@ import geopandas as gpd
 dfent = pd.read_csv("base_etablissement_par_tranche_effectif.csv", sep = ",") 
 dfgeo = pd.read_csv ("name_geographic_information.csv", sep = ",")
 dfsal = pd.read_csv("net_salary_per_town_categories.csv", sep = ",")
-dfpop = pd.read_csv("population.csv", sep = ",",low_memory=False)
-
 
 st.title("💶 French Industry 💶")
 st.sidebar.title("Sommaire")
