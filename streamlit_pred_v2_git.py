@@ -342,10 +342,10 @@ if page == pages[2] :
     st.write("")   
 
     st.markdown(""""
-        "Nous constatons que la localisation a un impact sur le salaire moyen.
-        - En effet, en Ile-de-France (IDF), nous remarquons que la quasi-totalité  des entreprises se situent dans la capitale (Paris - 75).
-        - En Provence-Alpes-Côte d’Azur (PACA), la répartition des entreprises est très hétérogène avec une concentration des entreprises dans les départements avec les villes de Marseille (13) et de Nice (06).
-        - En Auvergne-Rhône-Alpes (ARA), nous remarquons que le département de Lyon (69) concentre une grande partie des entreprises. Mais la région dispose aussi d’autres départements qui attirent les entreprises avec le Puy-de-Dôme (63), l’Isère (38) et la Loire (42) qui rassemblent plus de 10 000 entreprises.
+        Nous constatons que la localisation a un impact sur le salaire moyen.\n 
+        - En effet, en Ile-de-France (IDF), nous remarquons que la quasi-totalité  des entreprises se situent dans la capitale (Paris - 75).\n 
+        - En Provence-Alpes-Côte d’Azur (PACA), la répartition des entreprises est très hétérogène avec une concentration des entreprises dans les départements avec les villes de Marseille (13) et de Nice (06).\n 
+        - En Auvergne-Rhône-Alpes (ARA), nous remarquons que le département de Lyon (69) concentre une grande partie des entreprises. Mais la région dispose aussi d’autres départements qui attirent les entreprises avec le Puy-de-Dôme (63), l’Isère (38) et la Loire (42) qui rassemblent plus de 10 000 entreprises.\n 
                 """)
     
     st.write("")
