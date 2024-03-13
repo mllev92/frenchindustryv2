@@ -303,7 +303,7 @@ if page == pages[2] :
 
     # Création du graphique pour l'Île-de-France (Boxplot)
     df_idf_box = df_full[df_full["REG"]==1]
-    fig = px.box(df_idf, x='nom_département', y='SNHM14', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_idf_box, x='nom_département', y='SNHM14', title='Salaires moyens en IDF', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Affichage des graphiques
     st.plotly_chart(fig)
@@ -337,14 +337,14 @@ if page == pages[2] :
 
     # Graphique pour l'Auvergne-Rhône-Alpes (Boxplot)
     df_ara_box = df_full[df_full["REG"]==84]
-    fig = px.box(df_ara, x='nom_département', y='SNHM14', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
+    fig = px.box(df_ara_box, x='nom_département', y='SNHM14', color='DEP', color_discrete_sequence=px.colors.sequential.Viridis, labels={'DEP' : 'département'})
     fig.update_layout(xaxis_title="Départements", yaxis_title="Salaire Moyen", showlegend=False)
     # Afficher les graphiques
     st.plotly_chart(fig)
 
     st.write("")   
 
-    st.markdown(""""
+    st.markdown("""
         Nous constatons que la localisation a un impact sur le salaire moyen.\n 
         - En effet, en Ile-de-France (IDF), nous remarquons que la quasi-totalité  des entreprises se situent dans la capitale (Paris - 75).\n 
         - En Provence-Alpes-Côte d’Azur (PACA), la répartition des entreprises est très hétérogène avec une concentration des entreprises dans les départements avec les villes de Marseille (13) et de Nice (06).\n 
