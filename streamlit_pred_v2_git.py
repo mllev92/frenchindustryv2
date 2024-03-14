@@ -856,7 +856,7 @@ if page == pages[4] :
     modele = charger_modele()
     prediction_MLville = modele.predict(caracteristiques)
     st.write('##### Prédiction avec modèle de ML 02 (le + performant mais caractéristiques ville)')
-    st.write("Le salaire est",round(prediction_MLville[0],2),"€/h soit environ",round((prediction_MLville[0]*4.5*35),2),"€/mois",font="20")
+    st.write(f"Le salaire est <span style='font-size: 20px;'>{round(prediction_MLville[0], 2)} €/h</span> soit environ <span style='font-size: 20px;'>{round(prediction_MLville[0]*4.5*35, 2)} €/mois</span>", unsafe_allow_html=True)
     st.slider('', min_value=6.0, max_value=60.0, value=prediction_MLville[0], step=1.0)
 
     #2ème modèle
