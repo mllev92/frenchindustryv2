@@ -505,7 +505,7 @@ if page == pages[3] :
         st.markdown("""
                     Nous avons utilisé 4 DataFrames différents pour appliquer nos modèles de machine learning.
                     """)        
-        st.image('pre_process.png', use_column_width=True)
+        st.image('pre-process.png', use_column_width=True)
         
         st.subheader("Jeu de modélisation n°1")
         st.markdown("""
