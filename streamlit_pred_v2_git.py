@@ -570,7 +570,7 @@ if page == pages[3] :
         st.markdown("#### Résultats après Gridsearch")
         # Insertion résultat gridsearch
         data = {
-        'Model': ['KNN', 'SRV'],
+        'Model': ['KNN', 'SVR'],
         'R2_train': [0.859765, 0.885198],
         'R2_test': [0.681018, 0.802175],
         'R2_full': [0.815537,0.864396],
@@ -719,7 +719,7 @@ if page == pages[3] :
     if st.button("Features importance") :
         
         st.markdown("""
-                    Le SRV n'ayant pas de Features importance, nous allons présenter ceux du RandomForestRegressor, un modèle qui donne aussi des résultats très satisfaisant.
+                    Le SVR n'ayant pas de Features importance, nous allons présenter ceux du RandomForestRegressor, un modèle qui donne aussi des résultats très satisfaisant.
                     """
                     )
 
