@@ -676,7 +676,9 @@ if page == pages[3] :
                     """)
         st.write("")
         st.write("")
-
+        st.markdown("""
+                    #### 🥇 Jeu de modélisation n°2 avec le modèle SVR
+                    """)
     if st.button("Evaluation graphique du modèle") :
         
         #Courbe d'apprentissage
