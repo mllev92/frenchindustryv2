@@ -524,7 +524,7 @@ if page == pages[3] :
                     On constate des R² plutôt faibles (autour de 0.4, voire 0.2) ou du sur apprentissage lorsque le R² est meilleur (pour Random Forest et SVR).  
                     
                     
-                    La MSE sur l’ensemble de test est assez élevée. La RMSE de test, à son minimum est à 1.42 (donc un écart moyen de 1.42€ sur le salaire moyen horaire prédit).  
+                    La MSE sur l’ensemble de test est assez élevée. La RMSE de test, à son minimum est à 1.36 (donc un écart moyen de 1.36€ sur le salaire moyen horaire prédit).  
                     
                     
                     Pour ce premier jeu de modélisation, on peine donc à trouver un “meilleur” modèle. Nous souhaitons donc améliorer notre jeu de données.  
