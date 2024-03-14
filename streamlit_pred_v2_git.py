@@ -905,7 +905,7 @@ if page == pages[4] :
     modele = charger_modele()
     prediction_MLind = modele.predict(caracteristiques)
     st.write('##### Prédiction avec modèle de ML 04 (caractéristiques individu)')
-    st.write(f"Le salaire prédit est <span style='font-size: 24px;color: green;'>{round(prediction_MLind[0],2)} €/h</span> soit environ <span style='font-size: 24px;color: green'>{round((prediction_MLind[0]*4.5*35),2)} €/mois</span>", unsafe_allow_html=True))
+    st.write(f"Le salaire prédit est <span style='font-size: 24px;color: green;'>{round(prediction_MLind[0],2)} €/h</span> soit environ <span style='font-size: 24px;color: green'>{round((prediction_MLind[0]*4.5*35),2)} €/mois</span>", unsafe_allow_html=True)
     st.slider('', min_value=6.0, max_value=60.0, value=prediction_MLind[0], step=1.0)
 
     #Prédiction moulinette
@@ -994,7 +994,7 @@ if page == pages[4] :
     #prédiction
     prediction_moyenne_fonction=round(devine_salaire(genre, commune, age, cat_poste),2)
     st.write('##### Prédiction avec une fonction')
-    st.write(f"Le salaire prédit est <span style='font-size: 24px;color: green;'>{prediction_moyenne_fonction} €/h</span> soit environ <span style='font-size: 24px;color: green'>{round((prediction_moyenne_fonction*4.5*35),2)} €/mois</span>", unsafe_allow_html=True))
+    st.write(f"Le salaire prédit est <span style='font-size: 24px;color: green;'>{prediction_moyenne_fonction} €/h</span> soit environ <span style='font-size: 24px;color: green'>{round((prediction_moyenne_fonction*4.5*35),2)} €/mois</span>", unsafe_allow_html=True)
     st.slider('', min_value=6.0, max_value=60.0, value=prediction_moyenne_fonction, step=1.0)
 
 
