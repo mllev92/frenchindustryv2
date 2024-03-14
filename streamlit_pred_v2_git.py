@@ -502,6 +502,11 @@ if page == pages[3] :
     # Présentation du jeu de modélisation n°1
         
     if st.button("Choix du jeu de modélisation"):
+        st.markdown("""
+                    Nous avons utilisé 4 DataFrames différents pour appliquer nos modèles de machine learning.
+                    """)        
+        st.image('pre_process.png', use_column_width=True)
+        
         st.subheader("Jeu de modélisation n°1")
         st.markdown("""
                     Ce DataFrame a été créé à partir des données fournies pour le projet et avec les variables (ensemble de ratios sur la population et les entreprises) créées lors de l’initialisation des matrices de corrélation
