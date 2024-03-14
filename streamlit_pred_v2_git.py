@@ -666,7 +666,9 @@ if page == pages[3] :
         st.write("")
     
         st.subheader("Modèle le plus performant")
-
+        st.markdown("""
+                    #### 🥇 Jeu de modélisation n°2 avec le modèle SVR
+                    """)
         st.markdown("""
                     En conclusion, le jeu de données avec la proportion de cadre semble offrir le meilleur compromis en termes de performance (jeu de modélisation n°2 avec le modèle SVR).
 
@@ -676,9 +678,7 @@ if page == pages[3] :
                     """)
         st.write("")
         st.write("")
-        st.markdown("""
-                    #### 🥇 Jeu de modélisation n°2 avec le modèle SVR
-                    """)
+
     if st.button("Evaluation graphique du modèle") :
         
         #Courbe d'apprentissage
