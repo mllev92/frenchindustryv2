@@ -993,7 +993,22 @@ if page == pages[4] :
     
     #prédiction
     prediction_moyenne_fonction=round(devine_salaire(genre, commune, age, cat_poste),2)
-    st.write('##### Prédiction avec une fonction')
+    #st.write('##### Prédiction avec une fonction')
+    # Define the filename you want to open
+    filename = "Create fonction_salaire.py"
+    
+    # Define the text you want to display
+    text = "Prédiction avec une fonction"
+    
+    # Render the text with the clickable word using JavaScript
+    st.write(
+        f"""
+        <div>
+            <span onclick="window.open('{filename}','_blank');" style="cursor:pointer;text-decoration:underline;color:blue;">{text}</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+        
     st.write(f"Le salaire prédit est <span style='font-size: 24px;color: green;'>{prediction_moyenne_fonction} €/h</span> soit environ <span style='font-size: 24px;color: green'>{round((prediction_moyenne_fonction*4.5*35),2)} €/mois</span>", unsafe_allow_html=True)
     st.slider('', min_value=6.0, max_value=60.0, value=prediction_moyenne_fonction, step=1.0)
 
