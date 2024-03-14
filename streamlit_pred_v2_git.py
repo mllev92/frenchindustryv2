@@ -152,6 +152,7 @@ if page == pages[1] :
     if st.button("Population") :
         #Afficher le Dataset dfent
         dfpop_light = pd.read_csv("dfpop_light.csv")
+        dfpop_light["CODGEO"]=dfpop_light["CODGEO"].astype(str)
         dfpop_missing_values = pd.read_csv("dfpop_missing_values.csv")
         dfpop_describe = pd.read_csv("dfpop_describe.csv")
 
