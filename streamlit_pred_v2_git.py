@@ -486,7 +486,6 @@ if page == pages[3] :
                     - Régression linéaire
                     - Ridge
                     - Lasso
-                    - Ridge
                     - Elastic Net
                     - KNN
                     - Decision Tree
