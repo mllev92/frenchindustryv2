@@ -486,7 +486,6 @@ if page == pages[3] :
                     - Régression linéaire
                     - Ridge
                     - Lasso
-                    - Ridge
                     - Elastic Net
                     - KNN
                     - Decision Tree
@@ -596,9 +595,6 @@ if page == pages[3] :
                     Le modèle KNN a un surapprentissage beaucoup trop important. Le modèle SVR a une meilleure erreur quadratique, sans pour autant perdre la qualité de son écart entre r2 train et test.
 
                     
-                    On constate en observant l’importance des variables explicatives dans les différents modèles que la proportion de cadres est désormais la variable la plus importante.
-
-                    
                     Est-il possible d’améliorer nos scores avec l’ajout d’une donnée sur le département d’appartenance (comme pour l’appartenance à la région Ile-de-France) ?
 
 
@@ -629,7 +625,7 @@ if page == pages[3] :
 
         st.markdown("""
                     #### Interprétation
-                    Les résultats ne sont pas sensiblement meilleurs. Le SVR est un plus grand surapprentissage que le jeu de données précédent, sans pour autant améliorer l’erreur quadratique.
+                    Les résultats ne sont pas sensiblement meilleurs. Le SVR a un plus grand surapprentissage que le jeu de données précédent, sans pour autant améliorer l’erreur quadratique.
                     """)
         st.write("")
         st.write("")
