@@ -772,7 +772,7 @@ if page == pages[4] :
         checkbox_2 = st.checkbox("Qui est cette personne ?",key="checkbox_2")
         # Si la case à cocher est cochée, afficher du texte supplémentaire
         if checkbox_2:
-            st.write("Daphné a 27 ans et est ouvrière sur des chantiers, elle vit à Montastruc-la-Conseillère en Haute-Garronne")
+            st.write("Daphné a 27 ans et est ouvrière sur des chantiers, elle vit à Montastruc-la-Conseillère en Haute-Garonne")
             if st.button("Charger les caractéristiques de Daphné"):
             # Charger la valeur "Versailles" dans le champ de sélection
                 commune_chargee = "Montastruc-la-Conseillère"
